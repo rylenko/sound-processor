@@ -1,0 +1,14 @@
+#!/bin/sh
+
+O="converter.o"
+SO="libconverter.so"
+
+# Check path
+[ -z "$1" ] && echo "$ ./create-so <path>" && exit 1
+
+# Create
+g++ -c -fPIC -o "$O" $1
+g++ -shared -o "$SO" "$O"
+
+# Remove object file
+rm "$O"
