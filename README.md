@@ -6,7 +6,7 @@ Simple sound processor, which accepts only PCM mono 44100Hz with 16 bit samples,
 
 **1.** Clone this repository how you like it.
 
-**2.** Generate converters shared object (Default converters in **converter.cpp**:
+**2.** Generate converters shared object (Default converters in **converter.cpp**):
 ```
 $ ./create-so <path>
 ```
